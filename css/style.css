@@ -49,13 +49,13 @@ header .util li a {color: #fff; font-size: 11px;}
 .best li:nth-child(4) a {background-image: url(../images/img_menu_04.jpg); background-repeat: no-repeat;}
 
 
-.dcgift {background-image: url(../images/banner_bar_01.jpg); background-position: center; margin: 60px 0 90px;}
-.dcgift p {background-image: url(../images/banner_bar_01.jpg); height: 213px; background-position: center; padding: 135px 0 0 310px; box-sizing: border-box;}
+.giftset {background-image: url(../images/banner_bar_01.jpg); background-position: center; margin: 60px 0 90px;}
+.giftset p {background-image: url(../images/banner_bar_01.jpg); height: 213px; background-position: center; padding: 135px 0 0 310px; box-sizing: border-box;}
 
 .event {overflow: hidden; padding-bottom: 100px;}
 .event p {float: left;}
 
-.fcoffee {display: block; background-image: url(../images/banner_bar_02.jpg); height: 250px; background-position: center top; min-width: 1200px;}
+.burn-coffee {display: block; background-image: url(../images/banner_bar_02.jpg); height: 250px; background-position: center top; min-width: 1200px;}
 
 .ct-store{overflow: hidden; padding: 100px 0;}
 .ct-store p {height: 250px; width: 600px; background-image: url(../images/img_catalogue.gif); float: left; padding: 160px 0 0 370px; box-sizing: border-box;}
@@ -180,7 +180,7 @@ header .m-gnb {display: none;}
     .sns ul:nth-of-type(2) li a:hover {background-size: 110%;}
 }
 @media screen and (max-width:640px) {
-    header .gnb, header .util, header fieldset, .visual .button-list, .dcgift, .fcoffee, .cs, .notice, .sns ul:nth-of-type(2) li:nth-child(5), .sns ul:nth-of-type(2) li:nth-child(6), .sns ul:nth-of-type(2) li:nth-child(7), .sns ul:nth-of-type(2) li:nth-child(8), .sns ul:nth-of-type(1)  {display: none;}
+    header .gnb, header .util, header fieldset, .visual .button-list, .giftset, .burn-coffee, .ct-store, .notice, .sns ul:nth-of-type(2) li:nth-child(5), .sns ul:nth-of-type(2) li:nth-child(6), .sns ul:nth-of-type(2) li:nth-child(7), .sns ul:nth-of-type(2) li:nth-child(8), .sns ul:nth-of-type(1)  {display: none;}
     header {border-top: none;}
     header .m-gnb {display: block;}
     header .m-gnb img {width: 8%;}
