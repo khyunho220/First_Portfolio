@@ -67,7 +67,6 @@ header .util li a {color: #fff; font-size: 11px;}
 .nn .nbg > div {padding: 40px; box-sizing: border-box; float: left; width: 600px; position: relative;}
 .nn .nbg h4 {font-size: 22px; border-bottom: 1px solid #808080; padding-bottom: 6px; margin-bottom: 14px; font-weight: 500;}
 .nn .nbg li {line-height: 34px; font-size: 14px; overflow: hidden;}
-.nn .nbg li a:hover {color: #b20b0b;}
 .nn .nbg .date {float: right;}
 .nn .nbg > div p {position: absolute; top: 45px; right: 40px;}
 
@@ -77,7 +76,6 @@ header .util li a {color: #fff; font-size: 11px;}
 .csns ul:nth-of-type(2) {overflow: hidden; padding-bottom: 80px;}
 .csns ul:nth-of-type(2) li {float: left; width: 285px; height: 285px; margin: 0 0 20px 20px; text-indent: -500px; overflow: hidden;}
 .csns ul:nth-of-type(2) li a {display: block; height: 285px; background-size: 100%; transition: background 0.5s; background-position: center;}
-.csns ul:nth-of-type(2) li a:hover {background-size: 110%;}
 .csns ul:nth-of-type(2) li:nth-child(4n+1) {margin-left: 0;}
 .csns ul:nth-of-type(2) li:nth-child(1) a {background-image: url(../images/img_insta_01.jpg);}
 .csns ul:nth-of-type(2) li:nth-child(2) a {background-image: url(../images/img_insta_02.jpg);}
@@ -94,14 +92,13 @@ footer .fmenu p {float: right; padding-left: 50px;}
 footer .fmenu ul:nth-of-type(1) {float: left;}
 footer .fmenu ul:nth-of-type(1) li {display: inline; padding-right: 40px;}
 footer .fmenu ul:nth-of-type(1) li a {color: #fff; font-size: 16px; font-weight: 300;}
-footer .fmenu ul:nth-of-type(1) li a:hover {text-decoration: underline;}
 footer .fmenu ul:nth-of-type(2) {float: right;}
 footer .fmenu ul:nth-of-type(2) li {display: inline; padding-left: 10px;}
 footer .fadd {padding: 30px 0; font-size: 14px; overflow: hidden;}
 footer .fadd p {float: left; padding-top: 25px;}
 footer .fadd address {float: left; padding-left: 20px; width: 940px; font-weight: 300;}
 footer .fadd .pa {display: block; height: 15px;}
-/* index.html start */
+/* index.html end */
 
 /* prepare.html start */
 
@@ -116,10 +113,9 @@ body.history .aboutus h3 {font-size: 60px; padding: 150px 0 125px;}
 body.history .aboutus_content {width: 1000px; height: 160px; font-size: 14px; text-align: left;  overflow: hidden; line-height: 24px; border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
 body.history .aboutus_content p:nth-child(1) {float: left; padding: 30px;}
 body.history .aboutus_content p:nth-child(2) {float: right; padding: 30px;}
-
 body.history .our_history h3 {text-align: center; padding: 200px 0 100px;}
 body.history .history_list {position: relative;}
-body.history .history_list .center_line {position: absolute; background-color: #821222; width: 1px; height: 100%; left: 50%; }
+body.history .history_list .center_line {position: absolute; background-color: #821222; width: 1px; height: 100%; left: 50%;}
 body.history .history_list>div {overflow: hidden;}
 body.history .history_list div {font-size: 14px;}
 body.history .left {float: left; width: 50%; text-align: right; padding-right: 30px; box-sizing: border-box;}
@@ -156,7 +152,6 @@ body.evt .event_top {background-image: url(../images/bg_event_top.jpg); backgrou
 .board .content {border-top: 2px solid #000; border-bottom: 2px solid #000;padding: 100px 0;}
 .board .btn_list { margin: 50px 0; text-align: center;}
 .board .btn_list a {display: inline-block;  padding: 10px 20px; background-color: #821222; letter-spacing: 15px; text-indent: 15px; font-size: 18px; color: #fff; border: 2px solid #fff; transition: all 0.5s;}
-.board .btn_list a:hover {background-color: #fff; color: #821222; border: 2px solid #821222;}
 .board dl {overflow: hidden; border-top: 1px solid #959595;}
 .board dl:nth-child(2) {border-bottom: 1px solid #959595;}
 .board dl dt, .board dl dd {float: left; line-height: 60px;}
@@ -176,3 +171,114 @@ body.menu .menu_top {background-image: url(../images/bg_menu_top.gif); backgroun
 .title p {float: left; font-size: 14px;}
 .title select {float: right; width: 400px; height: 35px; padding: 0 40px 0 15px; border: 1px solid #fff; background-image: url(../images/ic_select_arrow.png); background-repeat: no-repeat; background-position: right 15px center; -webkit-appearance:none;font-size: 14px;}
 /* menu.html end */
+
+/* media query start*/
+header .mognb {display: none;}
+@media screen and (min-width:1041px) {
+    .nn .nbg li a:hover {color: #b20b0b;}
+    footer .fmenu ul:nth-of-type(1) li a:hover {text-decoration: underline;}
+    .csns ul:nth-of-type(2) li a:hover {background-size: 110%;}
+}
+@media screen and (max-width:640px) {
+    header .gnb, header .util, header fieldset, .visual .buttonList, .dcgift, .fcoffee, .cs, .notice, .csns ul:nth-of-type(2) li:nth-child(5), .csns ul:nth-of-type(2) li:nth-child(6), .csns ul:nth-of-type(2) li:nth-child(7), .csns ul:nth-of-type(2) li:nth-child(8), .csns ul:nth-of-type(1)  {display: none;}
+    header {border-top: none;}
+    header .mognb {display: block;}
+    header .mognb img {width: 10%;}
+    img {width: 100%;}
+    .center {width: 100%;}
+    header .logo {float: inherit; padding-right: 0; text-align: center;}
+    header .logo img {width: 45%;}
+    header .mognb {position: absolute; top: 6.5vw; left: 88%;}
+    
+    .visual {height: 125vw; min-width: inherit;}
+    .brandVisual a {height: 125vw; background-size: 100%;}
+    .brandVisual .visual01 a{background-image: url(../images/m_banner_main_01.jpg);}
+    .brandVisual .visual02 a{background-image: url(../images/m_banner_main_02.jpg);}
+    .brandVisual .visual03 a{background-image: url(../images/m_banner_main_03.jpg);}
+
+    .best h3 {padding: 5vw 0 1vw;}
+    .best h3 img {width: 37.3%;}
+    .best li {width: 47%;}
+    .best li div {padding-top: 48vw; font-size: 2.4vw;}
+    .best li div::first-line  {font-size: 2.8vw}
+    .best li a {padding-bottom: 4vw; background-size: 100%; background-position: center top;}
+    .best li a span {display: none;}
+    .best li:nth-child(n+1) {margin-left: 2%;}
+    .best li:nth-child(2n) {margin: 0 2%;}
+
+    .event {padding-top: 5vw; padding-bottom: 0;}
+    .event p {float: inherit;}
+    .nn h3 {padding: 5vw 0 4vw;}
+    .nn h3 img{width: 50%;}
+    .nn .nbg .news {width: 100%; padding: 6.8vw;}
+    .nn .nbg .news p {top: 7.5vw; left: 85.5%; width: 7%;}
+    .nn .nbg h4 {font-size: 3.5vw;}
+    .nn .nbg li {line-height: 6.6vw; font-size: 3vw;}
+    .nn .nbg li a {display: block;}
+    .nn .nbg li a span:nth-of-type(1) {float: left; width: 75%;}
+    .nn .nbg .date {width: 16%;}
+    
+    .csns h3 {padding: 5vw 0 4vw;}
+    .csns h3 img{width: 52%;}
+    .csns ul:nth-of-type(2) ul {padding-bottom: 5vw;}
+    .csns ul:nth-of-type(2) li {width: 47%; height: 47vw; margin: 0 0 2vw 2%;}
+    .csns ul:nth-of-type(2) li:nth-child(4n+1) {margin-left: 2%;}
+    .csns ul:nth-of-type(2) li a {height: 47vw;}
+
+    footer {width: 100%;}
+    footer .fmenu {overflow: hidden; border-bottom: 1px solid #808080; line-height: 7vw;}
+    footer .fmenu p {display: none;}
+    
+    footer .fmenu ul:nth-of-type(1) {float: inherit; text-align: center; width: 80%; padding: 0 10%}
+    footer .fmenu ul:nth-of-type(1) li {padding: 0 5%;}
+    footer .fmenu ul:nth-of-type(1) li:first-child {}
+    footer .fmenu ul:nth-of-type(1) li a {font-size: 3vw;}
+    footer .fmenu ul:nth-of-type(2) {float: inherit; text-align: center; padding-bottom: 1.8vw;}
+    footer .fmenu ul:nth-of-type(2) li img{width: 9%;}
+    footer .fadd {padding: 0; font-size: 2.5vw; text-align: center;}
+    footer .fadd p {float: inherit; width: 36.5%; margin: 0 auto; padding: 3vw 0;}
+    footer .fadd address {width: 90%; text-align: center; padding: 0 5% 2vw 5%;}
+    
+    body.prepare .open { height: 120vw; min-width: inherit; background-size: auto 100%;}
+    
+    body.history .aboutus {height: 100vw; min-width: inherit; background-size: auto 100%;}
+    body.history .aboutus h3 {font-size: 8vw; padding: 10vw 0 5vw; line-height: 15vw}
+    body.history .aboutus_content {width: 100%; height: 60vw; font-size: 2.8vw; text-align: center;  border: none; }
+    body.history .aboutus_content p:nth-child(1) {float: inherit; padding: 0;}
+    body.history .aboutus_content p:nth-child(2) {float: inherit; padding: 0 0 5vw;}
+    body.history .our_history {padding: 5vw 2vw; box-sizing: border-box;}
+    body.history .our_history h3 {width: 40%; margin: 5vw auto; padding: 0;}
+    body.history .history_list div {font-size: 2.8vw;}
+    body.history .left {width: 50%; padding-right: 5%;}
+    body.history .right {width: 50%; padding-left: 5%;}
+    body.history .history_list div div {display: none;}
+    body.history .history_list dl {line-height: 4.5vw; padding-top: 5vw;}
+    body.history .history_list dt {font-size: 4.5vw;}
+    body.history .history_list dd {line-height: 4vw; padding: 1vw 0;}
+    body.history .history_list dd:nth-of-type(1) {padding-top: 4vw;} 
+    body.history .history_list dl.right dt::before, body.history .history_list dl.left dt::after {content: ""; width: 5%; height: 5vw; margin-left: -2.5%; background-image: none; background-color: #821222; border-radius: 100%;}
+    
+    body.evt .event_top {height: 40vw; min-width: inherit; background-size: auto 100%;}
+    .loca_top {display: none;}
+    .board {font-size: 3.2vw;}
+    .board .evt_title {line-height: 5vw; margin-top: 5vw;}
+    .board .evt_title li:nth-child(1) {float: inherit; margin: 1vw;}
+    .board .evt_title li:nth-child(2) {float: left; margin: 1vw;}
+    .board .content {border-top: 2px solid #000; border-bottom: 2px solid #000;padding: 5vw 0;}
+    .board .btn_list { margin: 2vw 0; text-align: center;}
+    .board .btn_list a {padding: 2vw 1vw; letter-spacing: 3vw; font-size: 3.5vw;}
+    .board dl:nth-of-type(1), .board dl:nth-of-type(2) {width: 100%; padding: 5vw 2%; box-sizing: border-box;}
+    .board dl dt, .board dl dd {float: left; line-height: 4vw;}
+    .board dl dt {padding: 0; width:12%; font-weight: normal;}
+    .board dl dd:nth-of-type(1) {width: 60%; padding: 0 5%;}
+    .board dl dd:nth-of-type(2) {float: right; width: 18%; padding-right: 0;}
+    .board .btn_list + div {padding-bottom: 5vw;}
+    
+    body.menu .menu_top {height: 40vw; min-width: inherit; background-size: auto 100%;}
+    .new_menu {padding-bottom: 5vw;}
+    .title {margin: 5vw auto; padding: 2% 2vw; box-sizing: border-box; line-height: 5.5vw;}
+    .title p {float: left; font-size: 3vw;}
+    .title select {float: inherit; width: 100%; height: 5vw; padding: 0 10% 0 3%; border: 1px solid #fff; background-position: right 4% center; font-size: 3vw;}
+}
+/* media query end*/
+
