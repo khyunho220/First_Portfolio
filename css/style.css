@@ -183,7 +183,7 @@ header .m-gnb {display: none;}
     header .gnb, header .util, header fieldset, .visual .button-list, .dcgift, .fcoffee, .cs, .notice, .sns ul:nth-of-type(2) li:nth-child(5), .sns ul:nth-of-type(2) li:nth-child(6), .sns ul:nth-of-type(2) li:nth-child(7), .sns ul:nth-of-type(2) li:nth-child(8), .sns ul:nth-of-type(1)  {display: none;}
     header {border-top: none;}
     header .m-gnb {display: block;}
-    header .m-gnb img {width: 10%;}
+    header .m-gnb img {width: 8%;}
     img {width: 100%;}
     .center {width: 100%;}
     header .logo {float: inherit; padding-right: 0; text-align: center;}
