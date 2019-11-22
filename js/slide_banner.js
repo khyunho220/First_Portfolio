@@ -1,6 +1,6 @@
 $(function(){ 
-    var visual = $('.brandVisual > ul > li');
-    var button = $('.buttonList > li');
+    var visual = $('.brand-visual > ul > li');
+    var button = $('.button-list > li');
     var current = 0;
     var num =visual.length;
     var setIntervalId;
@@ -17,7 +17,7 @@ $(function(){
         }
     });
     
-    $('.brandVisual, .buttonList').on({
+    $('.brand-visual, .button-list').on({
         mouseover:function(){
             clearInterval(setIntervalId);
         },
