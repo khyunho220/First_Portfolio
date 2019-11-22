@@ -33,7 +33,6 @@ $(function(){
             if(n == num){
                 n = 0;
             }
-            
             button.eq(n).trigger('click');
         }, 3000);
      console.log(setIntervalId);
