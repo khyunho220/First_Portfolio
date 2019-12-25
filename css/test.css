@@ -1,0 +1,47 @@
+#snb_area {position:absolute; top:-550%; left:0; right:0; width:100%; height:100%; background:#54595f; z-index:10000;}
+#snb_area .font_en {font-family:inherit !important;}
+#snb_area #snb {position:relative;background: #2c2a29;}
+#snb_area #snb_header {padding:1.031em 0;font-size:1em;text-indent:100%;overflow:hidden;white-space:nowrap;text-align:center;background: #2c2a29 url(../img/logo.png) no-repeat center center;background-size:8.281em 3.062em;/* color:#feda49; font-family:'ClanPro'; */}
+
+#snb_area #snb_list {width:100%; background-color:#4f545a; overflow:hidden;}
+#snb_area #snb_list>li {float:left;width:33.3%;background: #d4b270;text-align:center;}
+#snb_area #snb_list>li>a {display:block;padding:1.625em 0 1.875em;color: #2c2a29;font-family:'ClanPro';border-left: 0.08em solid #c0a064;border-top: 0.08em solid #c0a064;}
+#snb_area #snb_list>li.on>a {background:#6e512f url(../img/ico_arrow.png) no-repeat center bottom; background-size:0.906em 0.468em;color:#feda49;}
+#snb_area #snb_list>li>a>img {width:2em; height:2em;}
+
+#snb_area #snb_list>li>a>span {display:block; margin-top:0.718em; font-size:0.75em; font-family:'ClanPro';}
+
+#snb_area #snb_list>li:nth-child(1) a,
+#snb_area #snb_list>li:nth-child(4) a,
+#snb_area #snb_list>li:nth-child(7) a {border-left:0;}
+#snb_area #snb_list>li:nth-child(1) a,
+#snb_area #snb_list>li:nth-child(2) a,
+#snb_area #snb_list>li:nth-child(3) a {border-top:none;}
+#snb_area #snb_list>li:nth-child(4),
+#snb_area #snb_list>li:nth-child(7) {clear:both;}
+
+#snb_area #snb_list>li .snb_sub_list {display:none; width:20em; padding:0.781em 0; background:#2c2a29;}
+#snb_area #snb_list>li .snb_sub_list>li {background:#2c2a29;}
+#snb_area #snb_list>li:nth-child(2) .snb_sub_list,
+#snb_area #snb_list>li:nth-child(5) .snb_sub_list,
+#snb_area #snb_list>li:nth-child(8) .snb_sub_list {margin-left:-6.68em;}
+#snb_area #snb_list>li:nth-child(3) .snb_sub_list, 
+#snb_area #snb_list>li:nth-child(6) .snb_sub_list,
+#snb_area #snb_list>li:nth-child(9) .snb_sub_list {margin-left:-13.375em;}
+
+#snb_area #snb_list>li .snb_sub_list>li>a {display:block; padding:0.781em 1.875em; font-size:0.875em; color:#fff; border-top:0.08em solid #4a4948;}
+#snb_area #snb_list>li .snb_sub_list>li:first-child>a {border-top:none;}
+
+/* 2018-05-25 SNB VOC메뉴 추가 */
+#snb_area #snb_list>li.snb_my {width: 100%;}
+#snb_area #snb_list>li.snb_my >a {padding: 1em 0;}
+#snb_area #snb_list>li.snb_my >a>span {display: inline-block;}
+
+#snb_area .login_area {position:relative;background: #2c2a29;padding:5.625em 0 2.187em;text-align:center;}
+#snb_area .login_area .btn_login {position:absolute; left:50%; top:1.7em; margin-left:-1.796em; width:3.593em; height:3.593em; background:url(../img/btn_login.png) no-repeat 0 0; background-size:3.593em;}
+#snb_area .login_area .btn_login.on {background-image:url(../img/btn_logout.png);}
+#snb_area .login_area .status {font-size:0.75em; font-weight:bold; color:#fff;}
+#snb_area .login_area .user_message {font-size:0.875em; margin-top:1.406em; color:#b2b2b2;}
+#snb_area .login_area .user_message span {color:#fff;}
+
+#snb_area .btn_snb_close {position:absolute; top:0; right:0; width:3.125em; height:3.125em; background:url(../img/btn_layer_close.png) no-repeat center center;  background-size:1em;}

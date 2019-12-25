@@ -187,12 +187,50 @@ header .m-gnb {display: none;}
 @media screen and (max-width:640px) {
     header .gnb, header .util, header fieldset, .visual .button-list, .giftset, .ct-store, .notice, .sns ul:nth-of-type(2) li:nth-child(5), .sns ul:nth-of-type(2) li:nth-child(6), .sns ul:nth-of-type(2) li:nth-child(7), .sns ul:nth-of-type(2) li:nth-child(8), .sns ul:nth-of-type(1)  {display: none;}
     header {border-top: none;}
-
     img {width: 100%;}
     .center {width: 100%;}
+    .mbg {width: 100%; height: 100%; position: absolute; top: 0; right: -100%; background-color: rgba(0, 0, 0, 0.75); z-index: 25; display: none;}
     header .logo {float: inherit; padding: 4.5vw 0; text-align: center;}
     header .logo img {width: 45%;}
-    header .m-gnb {position: absolute; display: block;  top: 4.5vw; left: 88%; width: 8%;}
+    header .m-gnb {display: block; }
+
+    header .m-gnb .m-menu-open, header .m-gnb .m-menu-close {position: absolute; top:6vw; right: 3%; width: 6%; height: 6vw; }
+    header .m-gnb .m-menu-close {display: none;   z-index: 30;}
+    header .m-gnb .mo {position: absolute; width: 75%; top: 0; right: -100%; background-color: #fff; z-index: 30;overflow-y: auto; height: 100%; box-sizing: border-box; display: none;}
+    header .m-gnb .mo .m-util {overflow: hidden;}
+    header .m-gnb .mo .m-util li{float: left; width: 50%; text-align: center;}
+    header .m-gnb .mo .m-util li a {display: block; padding: 5.2vw 0; font-size: 3.5vw; }
+    header .m-gnb .mo .m-util li:first-child a { background-color: #222; color: #fff;}
+    header .m-gnb .mo .m-util li:last-child a { background-color: #999; color: #fff;}
+    header .m-gnb .mo .m-menu {overflow: hidden; }
+    header .m-gnb .m-menu img {width: 40%;}
+    header .m-gnb .m-menu div {padding-bottom: 2vw;}
+    header .m-gnb .mo .m-menu > li {float: left; width: 33.33%; height: 100%; background-color: #2c090f; text-align: center; box-sizing: border-box; border-left: 0.1vw solid #999;border-top: 0.1vw solid #999; cursor: pointer;}
+    header .m-gnb .mo .m-menu > li.on {background-color: #561420;}
+    header .m-gnb .mo .m-menu > li > a {display: block;padding: 6vw 0;}
+    header .m-gnb .mo .m-menu > li:nth-child(1) a,
+    header .m-gnb .mo .m-menu > li:nth-child(4) a,
+    header .m-gnb .mo .m-menu > li:nth-child(7) a {border-left:none;}
+    header .m-gnb .mo .m-menu > li:nth-child(1) a,
+    header .m-gnb .mo .m-menu > li:nth-child(2) a,
+    header .m-gnb .mo .m-menu > li:nth-child(3) a {border-top:none;}
+    header .m-gnb .mo .m-menu > li:nth-child(4),
+    header .m-gnb .mo .m-menu > li:nth-child(7) {clear:both;}
+
+    header .m-gnb .mo .m-menu  li  a { color: #fff; font-size: 3.5vw;}
+    header .m-gnb .mo .m-menu li ul {width: 300%; }
+    header .m-gnb .mo .m-menu > li:nth-child(4),
+    header .m-gnb .mo .m-menu > li:nth-child(7) {clear: both;}
+    header .m-gnb .mo .m-menu > li:nth-child(2) ul,
+    header .m-gnb .mo .m-menu > li:nth-child(5) ul,
+    header .m-gnb .mo .m-menu > li:nth-child(8) ul{margin-left:  -100%;}
+    header .m-gnb .mo .m-menu > li:nth-child(3) ul,
+    header .m-gnb .mo .m-menu > li:nth-child(6) ul,
+    header .m-gnb .mo .m-menu > li:nth-child(9) ul{margin-left: -200%;}
+    header .m-gnb .mo .m-menu ul li {background-color: #561420; border-top: 0.1vw solid #999;}
+    header .m-gnb .mo .m-menu ul li a {display: block;  padding: 4vw 10%;}
+    header .m-gnb .mo .m-menu ul li:first-child {border-top: none;}
+    
     
     .visual {height: 121vw; min-width: inherit;}
     .brand-visual a {height: 121vw; background-size: 100%;}
