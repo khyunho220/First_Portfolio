@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* index.html start */
+html, body, .moon {overflow-y: visible;}
 .center {width: 1200px; margin: 0 auto;}
 
 /* button css start*/
@@ -23,20 +24,16 @@ header .gnb > ul > li:hover > a::after {width: 100%;}
 header .gnb>ul>li:hover .sub ul {background-color: #f3f3f3;}
 header .gnb .sub li a {font-size: 14px; line-height: 36px;}
 header .gnb .sub li a:hover {color: #cc2640;}
-header .util {position: absolute; top: -24px; right: 0;}
+header .util {position: absolute; top: 5px; right: 20px;}
 header .util li {display: inline; padding-left: 40px;}
 header .util li a {color: #fff; font-size: 11px;}
 
 .visual {position: relative; height: 650px; overflow: hidden; min-width: 1200px;}
-.brand-visual li {position: absolute; top: 0; width: 100%; background-position: center top; text-indent: -2000px; overflow: hidden;}
-.brand-visual a {display: block; height: 650px;}
-.brand-visual li:nth-child(1) {left: 0; background-image: url(../images/banner_main_01.jpg);}
-.brand-visual li:nth-child(2) {left: 100%; background-image: url(../images/banner_main_02.jpg);}
-.brand-visual li:nth-child(3) {left: 200%; background-image: url(../images/banner_main_03.jpg);}
-.button-list {position: absolute; overflow: hidden; bottom: 30px; left: 50%; margin-left: -96px;}
-.button-list li {float: left; width: 50px; height: 7px; margin: 0 7px; background-color: #fff; text-indent: -100px; overflow: hidden; cursor: pointer;}
-/*.button-list li.on {background-position: 0 0;}*/
-.button-list li.on {background-color: #000;}
+.visual li {position: absolute; top: 0; width: 100%; background-position: center top; text-indent: -2000px; overflow: hidden;}
+.visual a {display: block; height: 650px;}
+.visual .visual01 {background-image: url(../images/banner_main_01.jpg);}
+.visual .visual02 {background-image: url(../images/banner_main_02.jpg);}
+.visual .visual03 {background-image: url(../images/banner_main_03.jpg);}
 
 .best h3 {padding: 95px 0 15px; text-align: center;}
 .best ol {overflow: hidden;}
@@ -185,7 +182,8 @@ header .m-gnb {display: none;}
     .sns ul:nth-of-type(2) li a:hover {background-size: 110%;}
 }
 @media screen and (max-width:640px) {
-    header .gnb, header .util, header fieldset, .visual .button-list, .giftset, .ct-store, .notice, .sns ul:nth-of-type(2) li:nth-child(5), .sns ul:nth-of-type(2) li:nth-child(6), .sns ul:nth-of-type(2) li:nth-child(7), .sns ul:nth-of-type(2) li:nth-child(8), .sns ul:nth-of-type(1)  {display: none;}
+    html, body {overflow-y: hidden; position: relative; height: 100%;}
+    header .gnb, header .util, header fieldset, .visual .button-list, .giftset, .ct-store, .notice, .best li:nth-child(3), .best li:nth-child(4),.sns ul:nth-of-type(2) li:nth-child(4), .sns ul:nth-of-type(2) li:nth-child(5), .sns ul:nth-of-type(2) li:nth-child(6), .sns ul:nth-of-type(2) li:nth-child(7), .sns ul:nth-of-type(2) li:nth-child(8), .sns ul:nth-of-type(1), .bot-menu ul:nth-of-type(1) li:nth-child(4) {display: none;}
     header {border-top: none;}
     img {width: 100%;}
     .center {width: 100%;}
@@ -194,31 +192,35 @@ header .m-gnb {display: none;}
     header .logo img {width: 45%;}
     header .m-gnb {display: block; }
 
-    header .m-gnb .m-menu-open, header .m-gnb .m-menu-close {position: absolute; top:6vw; right: 3%; width: 6%; height: 6vw; }
-    header .m-gnb .m-menu-close {display: none;   z-index: 30;}
-    header .m-gnb .mo {position: absolute; width: 75%; top: 0; right: -100%; background-color: #fff; z-index: 30;overflow-y: auto; height: 100%; box-sizing: border-box; display: none;}
+    header .m-gnb .m-menu-open, header .m-gnb .m-menu-close {position: absolute; top:6vw; right: 5%; width: 6%; height: 6vw; }
+    header .m-gnb .m-menu-close {display: none; z-index: 30;}
+    header .m-gnb .mo {position: absolute; width: 75%; top: 0; right: -100%; background-color: #210b0b; z-index: 30;overflow-y: auto; height: 100%; box-sizing: border-box; display: none;}
     header .m-gnb .mo .m-util {overflow: hidden;}
     header .m-gnb .mo .m-util li{float: left; width: 50%; text-align: center;}
     header .m-gnb .mo .m-util li a {display: block; padding: 5.2vw 0; font-size: 3.5vw; }
-    header .m-gnb .mo .m-util li:first-child a { background-color: #222; color: #fff;}
+    header .m-gnb .mo .m-util li:first-child a { background-color: #333; color: #fff;}
     header .m-gnb .mo .m-util li:last-child a { background-color: #999; color: #fff;}
     header .m-gnb .mo .m-menu {overflow: hidden; }
     header .m-gnb .m-menu img {width: 40%;}
     header .m-gnb .m-menu div {padding-bottom: 2vw;}
-    header .m-gnb .mo .m-menu > li {float: left; width: 33.33%; height: 100%; background-color: #2c090f; text-align: center; box-sizing: border-box; border-left: 0.1vw solid #999;border-top: 0.1vw solid #999; cursor: pointer;}
+    header .m-gnb .mo .m-menu > li {float: left; width: 33.33%; height: 100%; background-color: #2c090f; text-align: center; box-sizing: border-box; border-left: 0.1vw solid #210b0b;border-top: 0.1vw solid #210b0b; cursor: pointer;}
+    header .m-gnb .mo .m-menu > li:nth-child(7),header .m-gnb .mo .m-menu > li:nth-child(8),header .m-gnb .mo .m-menu > li:nth-child(9) {border-bottom: 1px solid #210b0b;}
+    
     header .m-gnb .mo .m-menu > li.on {background-color: #561420;}
     header .m-gnb .mo .m-menu > li > a {display: block;padding: 6vw 0;}
     header .m-gnb .mo .m-menu > li:nth-child(1) a,
     header .m-gnb .mo .m-menu > li:nth-child(4) a,
     header .m-gnb .mo .m-menu > li:nth-child(7) a {border-left:none;}
+/*
     header .m-gnb .mo .m-menu > li:nth-child(1) a,
     header .m-gnb .mo .m-menu > li:nth-child(2) a,
     header .m-gnb .mo .m-menu > li:nth-child(3) a {border-top:none;}
+*/
     header .m-gnb .mo .m-menu > li:nth-child(4),
     header .m-gnb .mo .m-menu > li:nth-child(7) {clear:both;}
 
     header .m-gnb .mo .m-menu  li  a { color: #fff; font-size: 3.5vw;}
-    header .m-gnb .mo .m-menu li ul {width: 300%; }
+    header .m-gnb .mo .m-menu li ul {width: 300%;}
     header .m-gnb .mo .m-menu > li:nth-child(4),
     header .m-gnb .mo .m-menu > li:nth-child(7) {clear: both;}
     header .m-gnb .mo .m-menu > li:nth-child(2) ul,
@@ -233,14 +235,16 @@ header .m-gnb {display: none;}
     
     
     .visual {height: 121vw; min-width: inherit;}
-    .brand-visual a {height: 121vw; background-size: 100%;}
-    .brand-visual .visual01 a{background-image: url(../images/m_banner_main_01.jpg);}
-    .brand-visual .visual02 a{background-image: url(../images/m_banner_main_02.jpg);}
-    .brand-visual .visual03 a{background-image: url(../images/m_banner_main_03.jpg);}
+    .visual a {height: 121vw; background-size: 100%;}
+    .visual .visual01 a{background-image: url(../images/m_banner_main_01.jpg);}
+    .visual .visual02 a{background-image: url(../images/m_banner_main_02.jpg);}
+    .visual .visual03 a{background-image: url(../images/m_banner_main_03.jpg);}
 
     .best h3 {padding: 5vw 0 1vw;}
     .best h3 img {width: 37.3%;}
-    .best li {width: 47%;}
+    .best ol {margin-top: 5vw;}
+    .best li {width: 47%; margin: 0 2%;}
+    .best li:nth-child(1) {margin-right: 0;}
     .best li div {padding-top: 48vw; font-size: 2.4vw;}
     .best li div::first-line  {font-size: 2.8vw}
     .best li a {padding-bottom: 4vw; background-size: 100%; background-position: center top;}
@@ -250,7 +254,7 @@ header .m-gnb {display: none;}
 
     .event {padding-top: 5vw; padding-bottom: 0;}
     .event p {float: inherit;}
-    .burn-coffee {height: 25vw; min-width: inherit; background-size: auto 100%; margin: 5vw 0 4vw;}
+    .burn-coffee {height: 25vw; min-width: inherit; background-size: auto 100%; margin-bottom: 4vw;}
     .news-notice h3 {padding: 5vw 0 4vw;}
     .news-notice h3 img{width: 50%;}
     .news-notice .news-bg .news {width: 100%; padding: 6.8vw;}
@@ -263,23 +267,23 @@ header .m-gnb {display: none;}
     
     .sns h3 {padding: 5vw 0 4vw;}
     .sns h3 img{width: 52%;}
-    .sns ul:nth-of-type(2) ul {padding-bottom: 5vw;}
-    .sns ul:nth-of-type(2) li {width: 47%; height: 47vw; margin: 0 0 2vw 2%;}
-    .sns ul:nth-of-type(2) li:nth-child(4n+1) {margin-left: 2%;}
-    .sns ul:nth-of-type(2) li a {height: 47vw;}
+    .sns ul:nth-of-type(2) {padding-bottom: 6vw;}
+    .sns ul:nth-of-type(2) li {width: 32%; height: 32vw; margin: 0 0 0 2%;}
+    .sns ul:nth-of-type(2) li a {height: 32vw;}
 
     footer {width: 100%;}
     footer .bot-menu {overflow: hidden; border-bottom: 1px solid #808080; line-height: 7vw;}
     footer .bot-menu p {display: none;}
     
-    footer .bot-menu ul:nth-of-type(1) {float: inherit; text-align: center; width: 80%; padding: 0 10%}
-    footer .bot-menu ul:nth-of-type(1) li {padding: 0 4%;}
+    footer .bot-menu ul:nth-of-type(1) {float: inherit; text-align: center; width: 94%; padding: 5vw 3%;}
+    footer .bot-menu ul:nth-of-type(1) li {padding: 0 2%;}
     footer .bot-menu ul:nth-of-type(1) li:first-child {}
     footer .bot-menu ul:nth-of-type(1) li a {font-size: 3vw;}
-    footer .bot-menu ul:nth-of-type(2) {float: inherit; text-align: center; padding-bottom: 1.8vw;}
+    footer .bot-menu ul:nth-of-type(2) {float: inherit; text-align: center; padding-bottom: 5vw;}
+    footer .bot-menu ul:nth-of-type(2) li {margin: 0 2%}
     footer .bot-menu ul:nth-of-type(2) li img{width: 9%;}
     footer .bot-address {padding: 0; font-size: 2.5vw; text-align: center;}
-    footer .bot-address p {float: inherit; width: 36.5%; margin: 0 auto; padding: 3vw 0;}
+    footer .bot-address p {float: inherit; width: 36.5%; margin: 0 auto; padding: 5vw 0;}
     footer .bot-address address {width: 90%; text-align: center; padding: 0 5% 2vw 5%;}
     
     body.prepare .open { height: 120vw; min-width: inherit; background-size: auto 100%;}
@@ -292,15 +296,17 @@ header .m-gnb {display: none;}
     body.history .our_history {padding: 5vw 2vw; box-sizing: border-box;}
     body.history .our_history h3 {width: 40%; margin: 5vw auto; padding: 0;}
     body.history .history_list div {font-size: 2.8vw;}
-    body.history .left {width: 50%; padding-right: 5%;}
-    body.history .right {width: 50%; padding-left: 5%;}
-    body.history .history_list div div {display: none;}
-    body.history .history_list dl {line-height: 4.5vw; padding-top: 5vw;}
-    body.history .history_list dt {font-size: 4.5vw;}
-    body.history .history_list dd {line-height: 4vw; padding: 1vw 0;}
-    body.history .history_list dd:nth-of-type(1) {padding-top: 4vw;} 
-    body.history .history_list dl.right dt::before, body.history .history_list dl.left dt::after {width: 2%; height: 2vw; margin-left: -1%; }
+    body.history .history_list .center_line {left: 5%;}
+    body.history .left {text-align: left;}
+    body.history .left, body.history .right {float: inherit; width: 80%; padding-left: 10%;}
     
+    body.history .history_list div div {display: none;}
+    body.history .history_list dl {line-height: 4.5vw; padding-top: 8vw;}
+    body.history .history_list dt {font-size: 4.5vw; text-indent: -7%; text-decoration: overline; color: #821222;}
+    body.history .history_list dd {padding: 0.8vw 0;}
+    body.history .history_list dd:nth-of-type(1) {padding-top: 4vw;} 
+    body.history .history_list dl.right dt::before, body.history .history_list dl.left dt::after {display: none;}
+
     body.evt .event_top {height: 40vw; min-width: inherit; background-size: auto 100%;}
     .loca_top {display: none;}
     .board {font-size: 3.2vw;}

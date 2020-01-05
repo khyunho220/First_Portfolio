@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class="moon">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -8,12 +9,15 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/submenu.js"></script>
-    <script src="js/slide_banner.js"></script>
+    <script src="js/function.js"></script>
 </head>
 
-<body>
+<body class="moon">
     <p class="skip-navi blind"><a href="#container">본문내용 바로가기</a></p>
     <div class="wrap">
         <div class="gnbbg"></div>
@@ -93,14 +97,18 @@
                         <li><a href="#"><img src="images/m_menu_ic_01.png" alt="HOME">
                                 <div>HOME</div>
                             </a></li>
-                        <li><a href="#"><img src="images/m_menu_ic_02.png" alt="ABOUT US"><div>ABOUT US</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_02.png" alt="ABOUT US">
+                                <div>ABOUT US</div>
+                            </a>
                             <ul>
                                 <li><a href="history.html">브랜드 소개</a></li>
                                 <li><a href="history.html">연혁·수상</a></li>
                                 <li><a href="history.html">찾아오시는 길</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/m_menu_ic_03.png" alt="HOME"><div>MENU</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_03.png" alt="HOME">
+                                <div>MENU</div>
+                            </a>
                             <ul>
                                 <li><a href="menu.html">NEW MENU</a></li>
                                 <li><a href="menu.html">COFFEE</a></li>
@@ -109,32 +117,44 @@
                                 <li><a href="menu.html">MD</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/m_menu_ic_04.png" alt="HOME"><div>EVENT</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_04.png" alt="HOME">
+                                <div>EVENT</div>
+                            </a>
                             <ul>
                                 <li><a href="event.html">진행중인 이벤트</a></li>
                                 <li><a href="event.html">종료된 이벤트</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/m_menu_ic_05.png" alt="HOME"><div>MEMBERSHIP</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_05.png" alt="HOME">
+                                <div>MEMBERSHIP</div>
+                            </a>
                             <ul>
                                 <li><a href="prepare.html">커피베이 멤버스</a></li>
                                 <li><a href="prepare.html">멤버십 혜택</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/m_menu_ic_06.png" alt="HOME"><div>NEWS</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_06.png" alt="HOME">
+                                <div>NEWS</div>
+                            </a>
                             <ul>
                                 <li><a href="prepare.html">공지사항</a></li>
                                 <li><a href="prepare.html">언론 속 커피베이</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/m_menu_ic_07.png" alt="HOME"><div>STORE</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_07.png" alt="HOME">
+                                <div>STORE</div>
+                            </a>
                             <ul>
                                 <li><a href="prepare.html">지역별 매장</a></li>
                                 <li><a href="prepare.html">신규 매장</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><img src="images/m_menu_ic_08.png" alt="HOME"><div>SNS</div></a>
-                        <li><a href="#"><img src="images/m_menu_ic_09.png" alt="HOME"><div>MY PAGE</div></a>
+                        <li><a href="#"><img src="images/m_menu_ic_08.png" alt="HOME">
+                                <div>SNS</div>
+                            </a>
+                        <li><a href="#"><img src="images/m_menu_ic_09.png" alt="HOME">
+                                <div>MY PAGE</div>
+                            </a>
                     </ul>
                     <p class="moba"></p>
                 </div>
@@ -148,17 +168,10 @@
             </nav>
         </header>
         <div class="visual">
-            <div class="brand-visual">
-                <ul>
-                    <li class="visual01"><a href="event.html">라떼는말이야-달달한 연유와 진한 에스프레소의 만남</a></li>
-                    <li class="visual02"><a href="event.html">묻고 더블루 가</a></li>
-                    <li class="visual03"><a href="event.html">한 겨울 밤의 오로라</a></li>
-                </ul>
-            </div>
-            <ul class="button-list">
-                <li class="on">1번</li>
-                <li>2번</li>
-                <li>3번</li>
+            <ul>
+                <li class="visual01"><a href="event.html">라떼는말이야-달달한 연유와 진한 에스프레소의 만남</a></li>
+                <li class="visual02"><a href="event.html">묻고 더블루 가</a></li>
+                <li class="visual03"><a href="event.html">한 겨울 밤의 오로라</a></li>
             </ul>
         </div>
         <div id="container">
@@ -282,4 +295,6 @@
             </div>
         </footer>
     </div>
-</body></html>
+</body>
+
+</html>

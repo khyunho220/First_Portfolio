@@ -24,7 +24,7 @@ $(function () {
     });
     $('.m-menu-open').click(function () {
         $('.mo li').find('ul').stop().slideUp();
-        $('html, body').addClass('moon');
+        $('html, body').removeClass('moon');
         $('.mo, .mbg').animate({
             right: '0',
             opacity: 'show'
@@ -33,6 +33,7 @@ $(function () {
             right: '78%',
             opacity: 'show'
         });
+        $('.bx-prev, .bx-next').css({display:'none'});
     });
     $('.m-menu-close').click(function () {
         $('.mo li').find('ul').stop().slideUp();
@@ -41,12 +42,15 @@ $(function () {
             right: '-100%',
             opacity: 'hide'
         });
+        $('.bx-prev, .bx-next').css({display:'block'});
     });
     $('.mbg').click(function () {
+        $('html, body').addClass('moon');
         $('.mo li').find('ul').stop().slideUp();
         $('.mo, .mbg, .m-menu-close').animate({
             right: '-100%',
             opacity: 'hide'
         });
+        $('.bx-prev, .bx-next').css({display:'block'});
     });
 });
